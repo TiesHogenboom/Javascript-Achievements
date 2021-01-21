@@ -1,0 +1,25 @@
+.blokjes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 10px;
+    margin: 10px;
+}
+
+.blokje--rood {
+    color: #ffffff;
+    background-color: #ff0000;
+}
+
+.blokje--blauw {
+    color: #ffffff;
+    background-color: blue;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Alvast de variabele blokken en button 1 declareren die we zo gaan gebruiken
+        let alleBlokjes, button1; button2;
+        
+        // Dit is de start function. Roep deze aan als alles is geladen
+        let start = () => {
+            alleBlokjes = document.querySelectorAll("div");
+
+            button1 = document.getElementById("button1");
+            button1.addEventListener("click", maakRood );
+
+            button2 = documentTwo.getElementById("button2");
+            button2.addEventListenerTwo("click", maakBlauw );
+
+            //button2 = ....
+        };
+
+        let maakRood = () => {
+            for (let i = 0; i < alleBlokjes.length; i++) {
+                let ditBlokje = alleBlokjes[i];
+                ditBlokje.className = "blokje--rood";
+            }
+        let maakBlauw = () => {
+            for (let i = 0; i < alleBlokjes.length; i++) {
+                let ditBlokje = alleBlokjes[i];
+                ditBlokje.className = "blokje--blauw";
+            }
+        };
+
+        // Dit wordt uitgevoerd als de pagina helemaal geladen is
+        document.addEventListener("DOMContentLoaded", start );
+        documentTwo.addEventListenerTwo("DOMContentLoaded", start );
+    </script>
+</head>
+
+<body>
+    <section class="blokjes">
+        <div>Blokje 1</div>
+        <div>Blokje 2</div>
+        <div>Blokje 3</div>
+        <div>Blokje 4</div>
+        <div>Blokje 5</div>
+    </section>
+    <button id="button1">Maak alle blokjes rood</button>
+    <button id="button2">Maak alle blokjes blauw</button>
+</body>
+
+</html>
