@@ -7,7 +7,7 @@ function openCurtain() {
 	money -= 5;
 	time = 5;
 	document.getElementById('money').innerHTML = money;
-	curtain.src = "burger.png";
+	curtain.src = "rick.jpg";
 	timer = setInterval("timerFunction()", 50);
 }
 
